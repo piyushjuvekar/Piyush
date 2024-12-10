@@ -1,0 +1,35 @@
+Documentation For File Sharing 
+Step 1: Login into Super user in terminal 
+  sudo su 
+[Password]
+Step 2: Update the System
+  apt update
+Step 3: Install Samba Packages 
+  apt install samba
+Step 4: Move towards File Manager 
+1.	Select Folder [Right Click ->]
+2.	Select Local Network Share [Allow share folder and other users]
+3.	Create share
+4.	Add permissions automatically
+
+Step 5: Open terminal again
+Step 6: Run Command
+  sudo smbpasswd -a user present in PC
+Set SMB password=xxxx
+Reconfirm=xxxx
+Step 7: Check IP address
+   Ip -4 address
+
+To access share file in Windows:
+Step 1: open CMD and ping 
+ Ping (ip address) -t
+Step 2 : access file by clicking Windows+R and type 
+\\ Address 
+Step 3: Login with username and passwd [if Asks]
+
+To access share file in Linux:
+Step 1: Open file manager
+Step 2: select other location:
+Step 3: select option connect to server and type:
+ Smb://address/
+
